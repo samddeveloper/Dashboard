@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ConfigProvider, Layout } from "antd";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import LoginForm from "./components/LoginForm";
+import "./App.css"; // Lägg till styles för appen
 
-function App() {
+const { Header, Content } = Layout;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#002f4b", // Mörkblå primärfärg
+        },
+      }}
+    >
+      <Router>
+        <Layout>
+          <Header
+            style={{
+              backgroundColor: "#002f4b",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src="/skytech.png"
+              alt="SkyTech Logo"
+              style={{ height: "50px", marginRight: "20px" }}
+            />
+            <h1 style={{ color: "white" }}>Dashboard</h1>
+          </Header>
+          <Content style={{ padding: "20px", backgroundColor: "#f0f2f5" }}>
+            <Routes>
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/" element={<LoginForm />} />
+            </Routes>
+          </Content>
+        </Layout>
+      </Router>
+    </ConfigProvider>
   );
-}
+};
 
 export default App;
