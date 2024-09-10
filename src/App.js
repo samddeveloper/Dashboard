@@ -32,7 +32,7 @@ const App = () => {
             />
             <h1 style={{ color: "white" }}>Dashboard</h1>
           </Header>
-          <Content style={{ padding: "20px", backgroundColor: "#f0f2f5" }}>
+          <Content style={{ backgroundColor: "#f0f2f5" }}>
             <Routes>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/" element={<LoginForm />} />

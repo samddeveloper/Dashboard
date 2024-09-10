@@ -3,6 +3,7 @@ import { Form, Input, Button, Card } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "./LoginForm.css"; // Importera CSS
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -26,24 +27,8 @@ const LoginForm = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        backgroundColor: "#f0f2f5",
-      }}
-    >
-      <Card
-        title="Login to SkyTech"
-        style={{
-          width: 300,
-          textAlign: "center",
-          backgroundColor: "#002f4b",
-          color: "white",
-        }}
-      >
+    <div className="login-container">
+      <Card title="Login to SkyTech" className="glass-effect">
         <Form onFinish={handleSubmit}>
           <Form.Item
             name="email"
@@ -69,15 +54,7 @@ const LoginForm = () => {
             />
           </Form.Item>
 
-          <Button
-            type="primary"
-            htmlType="submit"
-            style={{
-              width: "100%",
-              backgroundColor: "#ff8c00",
-              borderColor: "#ff8c00",
-            }}
-          >
+          <Button type="primary" htmlType="submit" className="glow-button">
             Login
           </Button>
         </Form>

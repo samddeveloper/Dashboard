@@ -1,0 +1,46 @@
+/* Centrera login-formuläret på sidan */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/public/skytech-background.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Glaseffekt för formuläret */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  color: white;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+}
+
+/* Glow-effekt på knappen */
+.glow-button {
+  background-color: #ff8c00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.8), 0 0 20px rgba(255, 140, 0, 0.6);
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 20px rgba(255, 140, 0, 1), 0 0 40px rgba(255, 140, 0, 0.8);
+}
+
+/* Textfärg för inputs */
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
