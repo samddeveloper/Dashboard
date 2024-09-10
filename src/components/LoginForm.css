@@ -25,19 +25,19 @@
 
 /* Glow-effekt på knappen */
 .glow-button {
-  background-color: #ff8c00;
+  background-color: #002f4b;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(255, 140, 0, 0.8), 0 0 20px rgba(255, 140, 0, 0.6);
+  box-shadow: 0 0 5px rgba(255, 140, 0, 0.5), 0 0 10px rgba(255, 140, 0, 0.4);
   transition: 0.3s;
   cursor: pointer;
   width: 100%;
 }
 
 .glow-button:hover {
-  box-shadow: 0 0 20px rgba(255, 140, 0, 1), 0 0 40px rgba(255, 140, 0, 0.8);
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.7), 0 0 20px rgba(255, 140, 0, 0.6);
 }
 
 /* Textfärg för inputs */

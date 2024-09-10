@@ -23,6 +23,7 @@ const App = () => {
               backgroundColor: "#002f4b",
               display: "flex",
               alignItems: "center",
+              justifyContent: "center",
             }}
           >
             <img
