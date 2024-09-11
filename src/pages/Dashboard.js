@@ -51,7 +51,7 @@ const Dashboard = () => {
     },
     {
       key: "3",
-      metric: "Klickrate (CTR)",
+      metric: "Clickrate",
       value: "2.4%",
       region: "EU",
       growth: "1.2%",
@@ -108,7 +108,7 @@ const Dashboard = () => {
     {
       key: "11",
       metric: "Genomsnittlig Orderstorlek",
-      value: "€150",
+      value: "150",
       region: "EU",
       growth: "4%",
     },
@@ -247,7 +247,7 @@ const Dashboard = () => {
           </Col>
           <Col span={8}>
             <Card
-              title={<span style={{ color: "black" }}>Klickrate (CTR)</span>}
+              title={<span style={{ color: "black" }}>Clickrate</span>}
               bordered={false}
               style={{
                 textAlign: "left",
