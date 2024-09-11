@@ -39,7 +39,6 @@
   box-shadow: 0 0 10px rgba(255, 140, 0, 0.7), 0 0 20px rgba(255, 140, 0, 0.6);
 }
 
-/* Textfärg för inputs */
 input::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
