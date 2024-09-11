@@ -3,7 +3,7 @@ import { Form, Input, Button, Card } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./LoginForm.css"; // Importera CSS
+import "./LoginForm.css";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -13,7 +13,7 @@ const LoginForm = () => {
   const handleSubmit = async () => {
     try {
       const { data } = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/api/users/login`, // Miljövariabel
+        `${process.env.REACT_APP_BACKEND_URL}/api/users/login`,
         {
           email,
           password,
