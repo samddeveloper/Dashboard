@@ -324,19 +324,6 @@ const Dashboard = () => {
                   <Bar dataKey="sales" fill="#82ca9d" />
                   <Bar dataKey="orders" fill="#8884d8" />
                 </BarChart>
-              ) : chartType === "radar" ? (
-                <RadarChart data={radarData} outerRadius={90}>
-                  <PolarGrid />
-                  <PolarAngleAxis dataKey="metric" />
-                  <PolarRadiusAxis />
-                  <Radar
-                    name="Order Stats"
-                    dataKey="value"
-                    stroke="#8884d8"
-                    fill="#8884d8"
-                    fillOpacity={0.6}
-                  />
-                </RadarChart>
               ) : (
                 <LineChart data={data}>
                   <CartesianGrid strokeDasharray="3 3" />
