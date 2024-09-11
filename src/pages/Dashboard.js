@@ -29,7 +29,7 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  Text, // Import Text for labels
+  Text,
 } from "recharts";
 
 const Dashboard = () => {
