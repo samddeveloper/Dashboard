@@ -33,7 +33,7 @@ import {
 } from "recharts";
 
 const Dashboard = () => {
-  // Mockdata för metrics med mer rader och kolumner
+  // Mockdata
   const initialMetrics = [
     {
       key: "1",
