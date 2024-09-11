@@ -13,7 +13,7 @@ const LoginForm = () => {
   const handleSubmit = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5001/api/users/login",
+        `${process.env.REACT_APP_BACKEND_URL}/api/users/login`, // Miljövariabel
         {
           email,
           password,
