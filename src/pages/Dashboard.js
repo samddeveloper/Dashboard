@@ -269,7 +269,6 @@ const Dashboard = () => {
         >
           <Button onClick={() => setChartType("area")}>Area Chart</Button>
           <Button onClick={() => setChartType("bar")}>Bar Chart</Button>
-          <Button onClick={() => setChartType("radar")}>Radar Chart</Button>
           <Button onClick={() => setChartType("line")}>Line Chart</Button>
         </div>
 
